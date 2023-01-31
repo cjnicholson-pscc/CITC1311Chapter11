@@ -22,7 +22,7 @@ public class SimpleGeometricObject {
   }
 
   /** Set a new color */
-  public void setColor(String color) {
+  public void  setColor(String color) {
     this.color = color;
   }
 

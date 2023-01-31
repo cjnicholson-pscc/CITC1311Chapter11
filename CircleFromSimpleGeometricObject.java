@@ -1,5 +1,6 @@
 public class CircleFromSimpleGeometricObject 
     extends SimpleGeometricObject {
+    
   private double radius;
 
   public CircleFromSimpleGeometricObject() {
@@ -41,7 +42,13 @@ public class CircleFromSimpleGeometricObject
     return 2 * radius * Math.PI;
   }
 
-  /* Print the circle info */
+  @Override 
+  public String toString() {
+          return "The circle is created " + getDateCreated() +
+            " and the radius is " + radius;
+   }
+          
+          /* Print the circle info */
   public void printCircle() {
     System.out.println("The circle is created " + getDateCreated() +
       " and the radius is " + radius);

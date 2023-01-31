@@ -1,8 +1,12 @@
 public class TestCircleRectangle {
   public static void main(String[] args) {
+      
     CircleFromSimpleGeometricObject circle = 
       new CircleFromSimpleGeometricObject(1);
-    System.out.println("A circle " + circle.toString());
+    
+    Triangle t = new Triangle();
+    
+    System.out.println("A circle " + circle);
     System.out.println("The color is " + circle.getColor());
     System.out.println("The radius is " + circle.getRadius());
     System.out.println("The area is " + circle.getArea());
