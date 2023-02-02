@@ -18,13 +18,17 @@ public class DemoPolymophism {
      */
     public static void main(String[] args) {
         
-        ArrayList<Circle> arrayList = new ArrayList<>();
+        ArrayList arrayList = new ArrayList();
         
         arrayList.add(new Circle(3));
         
-        arrayList.forEach((circle) -> {
-            circle.printCircle();
-        }); 
+        for(Object obj: arrayList) {
+            
+            if(obj instanceof Circle) {
+                Circle circle = (Circle) obj;
+                circle.printCircle();
+            }
+        }
        
 
     }
